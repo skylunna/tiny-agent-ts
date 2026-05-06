@@ -5,8 +5,8 @@ export class ContextManager {
     private history: AgentMessage[] = [];
     private systemPrompt: string = '你是我的人工智能助手，协助我完成任务。';
 
-    constructor(systemPrompt: string) {
-        this.systemPrompt = systemPrompt;
+    constructor(systemPrompt: string, task: string) {
+        this.systemPrompt = systemPrompt.replace('{{task}}', task);
     }
 
     // 记录 Agent 思考/工具结果

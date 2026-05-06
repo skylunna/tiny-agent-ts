@@ -24,3 +24,6 @@ logs/
 *.log
 coverage/
 .nyc_output/
+
+# output
+workspace/
