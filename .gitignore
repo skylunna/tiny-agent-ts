@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Build & TS cache
+dist/
+*.tsbuildinfo
+
+# Environment & Secrets (API Keys 等)
+.env
+.env.local
+.env.*.local
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs & Test Coverage
+logs/
+*.log
+coverage/
+.nyc_output/
